@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="360" viewBox="0 0 1280 360" role="img" aria-label="SS|T — Said Seydametov, software engineer">
+  <title>SS|T — Said Seydametov</title>
+  <defs>
+    <clipPath id="card"><rect width="1280" height="360" rx="22"/></clipPath>
+    <radialGradient id="sky" cx="0.78" cy="0" r="0.9">
+      <stop offset="0" stop-color="#1f1f1f"/>
+      <stop offset="0.55" stop-color="#0a0a0a"/>
+      <stop offset="1" stop-color="#030303"/>
+    </radialGradient>
+    <radialGradient id="planet" cx="0.62" cy="0" r="0.5">
+      <stop offset="0" stop-color="#202020"/>
+      <stop offset="0.35" stop-color="#0c0c0c"/>
+      <stop offset="1" stop-color="#020202"/>
+    </radialGradient>
+    <linearGradient id="rim" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0.12" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="0.45" stop-color="#fff" stop-opacity="0.35"/>
+      <stop offset="0.66" stop-color="#fff" stop-opacity="0.95"/>
+      <stop offset="0.88" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="ink" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#a6a6a6"/>
+      <stop offset="0.55" stop-color="#d9d9d9"/>
+      <stop offset="1" stop-color="#ffffff"/>
+    </linearGradient>
+    <linearGradient id="sheen" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#fff" stop-opacity="1"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <mask id="letters-mask">
+      <path fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" d="M 567.0 119.3 C 558.1 113.6, 544.8 112.0, 530.0 112.0 C 507.8 112.0, 494.5 116.2, 494.5 125.0 C 494.5 133.8, 507.8 136.4, 530.0 138.0 C 552.2 139.6, 565.5 142.2, 565.5 151.0 C 565.5 159.8, 552.2 164.0, 530.0 164.0 C 515.2 164.0, 501.9 162.4, 493.0 156.7"/>
+      <path fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" d="M 687.0 119.3 C 678.1 113.6, 664.8 112.0, 650.0 112.0 C 627.8 112.0, 614.5 116.2, 614.5 125.0 C 614.5 133.8, 627.8 136.4, 650.0 138.0 C 672.2 139.6, 685.5 142.2, 685.5 151.0 C 685.5 159.8, 672.2 164.0, 650.0 164.0 C 635.2 164.0, 621.9 162.4, 613.0 156.7"/>
+      <path fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" d="M 719.0 112 H 787.0 M 753.0 112 V 164"/>
+    </mask>
+    <filter id="blur-lg" x="-20%" y="-200%" width="140%" height="500%"><feGaussianBlur stdDeviation="22"/></filter>
+    <filter id="blur-sm" x="-20%" y="-200%" width="140%" height="500%"><feGaussianBlur stdDeviation="3"/></filter>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="table" tableValues="0 0.07"/></feComponentTransfer>
+    </filter>
+  </defs>
+  <style>
+    .breathe { animation: breathe 8s ease-in-out infinite; }
+    .sweep { animation: sweep 8s cubic-bezier(.45,0,.2,1) infinite; }
+    @keyframes breathe { 0%,100% { opacity: .7 } 50% { opacity: 1 } }
+    @keyframes sweep { 0% { transform: translateX(-300px) } 45%,100% { transform: translateX(1300px) } }
+    @media (prefers-reduced-motion: reduce) { .breathe, .sweep { animation: none } }
+  </style>
+  <g clip-path="url(#card)">
+    <rect width="1280" height="360" fill="url(#sky)"/>
+
+    <!-- атмосфера над горизонтом -->
+    <g class="breathe">
+      <ellipse cx="768" cy="274" rx="420" ry="26" fill="#cfcfcf" opacity="0.16" filter="url(#blur-lg)"/>
+      <circle cx="640.0" cy="1418" r="1150" fill="none" stroke="url(#rim)" stroke-width="5" opacity="0.5" filter="url(#blur-sm)"/>
+    </g>
+    <!-- сфера -->
+    <circle cx="640.0" cy="1418" r="1150" fill="url(#planet)"/>
+    <circle cx="640.0" cy="1418" r="1150" fill="none" stroke="url(#rim)" stroke-width="1.1"/>
+
+    <rect width="1280" height="360" filter="url(#grain)"/>
+
+    <!-- логотип -->
+    <g fill="none" stroke="url(#ink)" stroke-width="2" stroke-linecap="round">
+      <path d="M 567.0 119.3 C 558.1 113.6, 544.8 112.0, 530.0 112.0 C 507.8 112.0, 494.5 116.2, 494.5 125.0 C 494.5 133.8, 507.8 136.4, 530.0 138.0 C 552.2 139.6, 565.5 142.2, 565.5 151.0 C 565.5 159.8, 552.2 164.0, 530.0 164.0 C 515.2 164.0, 501.9 162.4, 493.0 156.7"/>
+      <path d="M 687.0 119.3 C 678.1 113.6, 664.8 112.0, 650.0 112.0 C 627.8 112.0, 614.5 116.2, 614.5 125.0 C 614.5 133.8, 627.8 136.4, 650.0 138.0 C 672.2 139.6, 685.5 142.2, 685.5 151.0 C 685.5 159.8, 672.2 164.0, 650.0 164.0 C 635.2 164.0, 621.9 162.4, 613.0 156.7"/>
+      <path d="M 719.0 112 H 787.0 M 753.0 112 V 164"/>
+    </g>
+    <line x1="703.0" y1="98" x2="703.0" y2="184" stroke="#8a8a8a" stroke-width="1.2"/>
+    <g mask="url(#letters-mask)">
+      <rect class="sweep" x="0" y="92" width="220" height="92" fill="url(#sheen)"/>
+    </g>
+
+    <text x="640.0" y="226" text-anchor="middle"
+      font-family="'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="400"
+      letter-spacing="6.5" fill="#8c8c8c">SAID SEYDAMETOV  ·  SOFTWARE ENGINEER</text>
+  </g>
+</svg>
