@@ -19,19 +19,19 @@
       <stop offset="0.88" stop-color="#fff" stop-opacity="0"/>
     </linearGradient>
     <linearGradient id="ink" x1="0" y1="1" x2="1" y2="0">
-      <stop offset="0" stop-color="#a6a6a6"/>
-      <stop offset="0.55" stop-color="#d9d9d9"/>
-      <stop offset="1" stop-color="#ffffff"/>
+      <stop offset="0" stop-color="#868686"/>
+      <stop offset="0.55" stop-color="#ababab"/>
+      <stop offset="1" stop-color="#c9c9c9"/>
     </linearGradient>
     <linearGradient id="sheen" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0" stop-color="#fff" stop-opacity="0"/>
-      <stop offset="0.5" stop-color="#fff" stop-opacity="1"/>
+      <stop offset="0.5" stop-color="#fff" stop-opacity="0.75"/>
       <stop offset="1" stop-color="#fff" stop-opacity="0"/>
     </linearGradient>
     <mask id="letters-mask">
-      <path fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" d="M 567.0 119.3 C 558.1 113.6, 544.8 112.0, 530.0 112.0 C 507.8 112.0, 494.5 116.2, 494.5 125.0 C 494.5 133.8, 507.8 136.4, 530.0 138.0 C 552.2 139.6, 565.5 142.2, 565.5 151.0 C 565.5 159.8, 552.2 164.0, 530.0 164.0 C 515.2 164.0, 501.9 162.4, 493.0 156.7"/>
-      <path fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" d="M 687.0 119.3 C 678.1 113.6, 664.8 112.0, 650.0 112.0 C 627.8 112.0, 614.5 116.2, 614.5 125.0 C 614.5 133.8, 627.8 136.4, 650.0 138.0 C 672.2 139.6, 685.5 142.2, 685.5 151.0 C 685.5 159.8, 672.2 164.0, 650.0 164.0 C 635.2 164.0, 621.9 162.4, 613.0 156.7"/>
-      <path fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" d="M 719.0 112 H 787.0 M 753.0 112 V 164"/>
+      <path fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" d="M 567.0 119.3 C 558.1 113.6, 544.8 112.0, 530.0 112.0 C 507.8 112.0, 494.5 116.2, 494.5 125.0 C 494.5 133.8, 507.8 136.4, 530.0 138.0 C 552.2 139.6, 565.5 142.2, 565.5 151.0 C 565.5 159.8, 552.2 164.0, 530.0 164.0 C 515.2 164.0, 501.9 162.4, 493.0 156.7"/>
+      <path fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" d="M 687.0 119.3 C 678.1 113.6, 664.8 112.0, 650.0 112.0 C 627.8 112.0, 614.5 116.2, 614.5 125.0 C 614.5 133.8, 627.8 136.4, 650.0 138.0 C 672.2 139.6, 685.5 142.2, 685.5 151.0 C 685.5 159.8, 672.2 164.0, 650.0 164.0 C 635.2 164.0, 621.9 162.4, 613.0 156.7"/>
+      <path fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" d="M 719.0 112 H 787.0 M 753.0 112 V 164"/>
     </mask>
     <filter id="blur-lg" x="-20%" y="-200%" width="140%" height="500%"><feGaussianBlur stdDeviation="22"/></filter>
     <filter id="blur-sm" x="-20%" y="-200%" width="140%" height="500%"><feGaussianBlur stdDeviation="3"/></filter>
@@ -63,12 +63,12 @@
     <rect width="1280" height="360" filter="url(#grain)"/>
 
     <!-- логотип -->
-    <g fill="none" stroke="url(#ink)" stroke-width="2" stroke-linecap="round">
+    <g fill="none" stroke="url(#ink)" stroke-width="1.6" stroke-linecap="round">
       <path d="M 567.0 119.3 C 558.1 113.6, 544.8 112.0, 530.0 112.0 C 507.8 112.0, 494.5 116.2, 494.5 125.0 C 494.5 133.8, 507.8 136.4, 530.0 138.0 C 552.2 139.6, 565.5 142.2, 565.5 151.0 C 565.5 159.8, 552.2 164.0, 530.0 164.0 C 515.2 164.0, 501.9 162.4, 493.0 156.7"/>
       <path d="M 687.0 119.3 C 678.1 113.6, 664.8 112.0, 650.0 112.0 C 627.8 112.0, 614.5 116.2, 614.5 125.0 C 614.5 133.8, 627.8 136.4, 650.0 138.0 C 672.2 139.6, 685.5 142.2, 685.5 151.0 C 685.5 159.8, 672.2 164.0, 650.0 164.0 C 635.2 164.0, 621.9 162.4, 613.0 156.7"/>
       <path d="M 719.0 112 H 787.0 M 753.0 112 V 164"/>
     </g>
-    <line x1="703.0" y1="98" x2="703.0" y2="184" stroke="#8a8a8a" stroke-width="1.2"/>
+    <line x1="703.0" y1="98" x2="703.0" y2="184" stroke="#5f5f5f" stroke-width="1.1"/>
     <g mask="url(#letters-mask)">
       <rect class="sweep" x="0" y="92" width="220" height="92" fill="url(#sheen)"/>
     </g>
